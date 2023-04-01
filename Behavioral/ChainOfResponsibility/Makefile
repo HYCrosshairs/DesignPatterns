@@ -3,7 +3,7 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -pedantic
 
 # Source files
-SRCS = main.cpp BaseStringValidator.cpp
+SRCS = main.cpp BaseValidator.cpp NotEmptyValidator.cpp LengthValidator.cpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)

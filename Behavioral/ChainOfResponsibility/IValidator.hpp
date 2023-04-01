@@ -4,13 +4,13 @@
 
 namespace lib::utils::checker
 {
-class ISValidator
+class IValidator
 {
 public:
-    ISValidator() = default;
-    virtual ~ISValidator() = default;
+    IValidator() = default;
+    virtual ~IValidator() = default;
 
-    virtual ISValidator* nextISValidatorHandler(ISValidator* validatorHandler) = 0;
+    virtual IValidator* nextHandler(IValidator* validatorHandler) = 0;
     virtual std::string validateHandler(const std::string& strToValidate) = 0;
 };    
 } // namespace lib::utils::checker
